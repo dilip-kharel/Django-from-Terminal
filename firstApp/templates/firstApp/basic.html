@@ -1,0 +1,10 @@
+{% extends "firstApp/header.html" %}
+
+{% block content %}
+<p>This is inside the basic.html file</p>
+
+   {% for c in Items %}
+        <p>{{c}}</p>
+    {% endfor %}
+
+{% endblock %}

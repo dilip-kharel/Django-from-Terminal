@@ -21,8 +21,9 @@ from django.conf.urls import url, include
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^firstApp/', include('firstApp.urls')),
-]
+    url(r'^', include('firstApp.urls')),
+    url(r'^blog/', include('secApp.urls')),
+    ]
 """
 
 from django.conf.urls import url
