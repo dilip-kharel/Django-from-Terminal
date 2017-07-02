@@ -2,10 +2,15 @@
 <html lang="en">
 
     <head>
+        
         <title>Bananas</title>
         <meta charset="utf-8" />
         {% load staticfiles %}
         <link rel='stylesheet' href="{% static 'firstApp/css/bootstrap.min.css' %}" type="text/css" />
+        
+       <!-- {% load staticfiles %}
+        <link rel='stylesheet' href="{% static 'firstApp/js/bootstrap.min.js' %}" type="text/javascript" />
+        -->
         <meta name="viewport" content = "width=device-width, initial-scale=1.0">
         
         <style type="text/css">
@@ -14,6 +19,15 @@
                 height:100%
             }
         </style>
+        
+       <!-- <style type="text/javascript">
+            html,
+            body {
+                height:100%
+            }
+        </style>
+        -->
+        
         
     </head>
 
@@ -50,6 +64,7 @@
                     <li><a href='/'>Home</a></li>
                     <li><a href='/blog/'>Blog</a></li>
                     <li><a href='/contact/'>Contact</a></li>
+                    <li><a href='/secApp/jam'>JamUp</a></li>
                 </ul>
                 
                 </div><!--well bs-sidebar affix-->  
@@ -60,18 +75,25 @@
                 <br><br>
                     {% block content %}
                     {% endblock %}    
-                    
+                <br><br><br><br><br><br><br><br>   
                 </div>
             </div>
-            
+ 
         </div>
             
         </div>
+        
         <footer>
             <div class="container-fluid" style="margin-left:15px">
                 <p><a href="#" target="_blank">Contact</a> | <a href="#" target="_blank">LinkedIn</a> | <a href="#" target="_blank">Twitter</a> | <a href="#" target="_blank">Google+</a></p>
             </div>
         </footer>
+        
+        
+        <script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        <script type="text/javascript" src="{% static 'firstApp/js/bootstrap.min.js' %}"></script>
         
     </body>
 

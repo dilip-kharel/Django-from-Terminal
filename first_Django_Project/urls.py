@@ -23,6 +23,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('firstApp.urls')),
     url(r'^blog/', include('secApp.urls')),
+    url(r'^secApp/', include('secApp.urls')),
     ]
 """
 
